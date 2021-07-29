@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #container{
+                border: 3px solid red;
+                padding: 10px;
+                height: 600px;
+                display: flex;
+                align-items:center;
+                justify-content:center;
+            }
+            h1{
+                font-size: 40px;
+                
+            }
+            #time{
+               font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1><span id="time"></span></h1>
+        </div>
+        <script>
+            function time()
+            {
+                let time=new Date();
+                //console.log(time);
+                document.getElementById('time').innerHTML=time;
+            }
+            setInterval(time,1000);
+        </script>
+    </body>
+</html>

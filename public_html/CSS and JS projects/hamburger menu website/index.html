@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mobile.css">
+        <title>i-Education ready to gain knowledge</title>
+    </head>
+    <body>
+        <nav id="navigation" class="background">
+            <div class="logo">
+                <img src="flogi.jpg">
+            </div>
+            <div class="nav-list ">
+                <ul>
+                    <li><a href="#second">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#heading">Services</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+
+                </ul>
+            </div>
+            <div id="burger" onclick="nav()">
+
+            </div>
+            <div class="search-bar ">
+                <input type="text" placeholder="Search for.." name="search">
+                <button id="btn-1">Search</button>
+            </div>
+        </nav>
+        <section id="second" class="background">
+            <div class="main-box">
+                <div class="first-half">
+                    <h2>The Future Of Fashion is Here</h2>
+                    <p>This fashion page is going to make the fashion beyond thinking.Make sure you have subscribed and join our page today</p>
+                    <button id="btn-1">Subscribe</button>
+                    <button id="btn-1"  >Join Us</button>
+                </div>
+                <div class="second-half">
+                    <img src="image.jpg">
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="content">
+                    <h1>ABOUT US</h1>
+                    <p> Helping Creative Ideas Succeed</p>
+                    <button id="btnabout" >More</button>
+                </div>
+
+            </div>
+        </section>
+        <section id="moreaboutsection">
+            <div class="first">
+                <h1>We believe in the power of the
+                    individual to make great things.</h1>
+                <p>We exist to help people with creative ideas stand out and succeed.
+                    We create a modern platform that enables millions to build a brand, share their stories, and transact with their customers in an impactful and beautiful online presence.</p>
+            </div>
+            <div class="numbers">
+                <div class="no">
+                    <h1>2003</h1>
+                    <p>Designs we have designed uptill now</p>
+                </div>
+                <div class="no">
+                    <h1>1,143</h1>
+                    <p>Numbers of models are collaborating with us </p>
+                </div>
+                <div class="no">
+                    <h1>Millions</h1>
+                    <p>We have milions of fans all over the world</p>
+                </div>
+            </div>
+            <div class="images">
+                <h1>Be<br> Ready<br> For<br> Fashion</h1>
+            </div>
+            <div class="locations">
+                <div class="location-heading">
+                    <h1>Our Locations</h1>
+                </div>
+                <div class="country">
+                    <div class="numbers">
+                        <div class="no">
+                            <img src="aus.jpg">
+                            <p>New-Zealand</p>
+                        </div>
+                        <div class="no">
+                            <img src="nz.jpg">
+                            <p>New-York </p>
+                        </div>
+                        <div class="no">
+                            <img src="ny.jpg">
+                            <p>Australia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div class="heading">
+                <h1 id="heading">Our Services</h1>
+            </div>
+            <div class="flex">
+                <div class="service-container">
+                    <h3>Be the Customer</h3>
+                    <br>
+                    <p>Developing deep empathy for our customer’s needs, challenges, and dreams is critical to ensuring we do that well. We want to provide the same standard of tools and services to our customers that we would want for ourselves.</p>
+                </div>
+                <div class="service-container">
+                    <h3>Design Is Not A Luxury</h3>
+                    <p>We believe that great design should be available to everyone, and we are relentless in our pursuit of great design in everything we do.</p>
+                </div>
+                <div class="service-container">
+                    <h3>Build the Ideal</h3>
+                    <p>We seek to shape the future of our industry by conceiving of and building game changing products. To do this, we take bets on big ideas, while also recognizing that pursuit of perfection is a process that requires constant iteration.</p>
+                </div>
+            </div>
+            <br>
+            <div class="flex">
+                <div class="service-container">
+                    <h3>Learn Fast, Act Fast</h3>
+                    <p>We believe that pursuing the fastest path to learning and having a healthy bias to action are keys to our success. We seek to do both whenever possible.</p>
+                </div>
+                <div class="service-container">
+                    <h3>Protect Creativity</h3>
+                    <p>Ideas can come from anyone or anywhere, but they are fragile and require space to develop and grow. We believe the creative process is critical to our success, and we seek to protect it as we develop new directions for our product and company.</p>
+                </div>
+                <div class="service-container">
+                    <h3>Simplify</h3>
+                    <p>Get your design be simple and creative</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+
+            <div class="contact-box">
+                <div class="right">
+                    <h1>Feel Free to Contact Us</h1>
+                    <p>Please be the member of the community in which daily new designs and fashion products are been added</p>
+                    <button id="btn-5" onclick="toggle()">More</button>
+                </div>
+                <div class="left">
+                    <input type="text" placeholder="Entter name" id="name">
+                    <input type="text" placeholder="Entter email" id="email">
+                    <input type="text" placeholder="Entter phone" id="phone">
+                    <input type="text" placeholder="Entter address" id="address">
+                    <textarea type="text" placeholder="enter your query" rows="10" cols="20" id="response"></textarea>
+                    <button id="btn6">Submit</button>
+                </div>
+            </div>
+        </section>
+        <script>
+            let btn = document.getElementById('btn-5');
+                    let btn2 = document.getElementById('btn6');
+                    let name = document.getElementById('name');
+                    let email = document.getElementById('email');
+                    let address = document.getElementById('address');
+                    let
+            response = document.getElementById('response');
+                    phone = document.getElementById('phone');
+
+            function toggle()
+            {
+                if (name.style.visibility = 'hidden') {
+                    name.style.visibility = 'visible';
+                }
+
+                if (phone.style.visibility = 'hidden') {
+                    phone.style.visibility = 'visible';
+                }
+
+                if (btn6.style.visibility = 'hidden') {
+                    btn6.style.visibility = 'visible';
+                }
+
+                if (email.style.visibility = 'hidden') {
+                    email.style.visibility = 'visible';
+                }
+
+                if (address.style.visibility = 'hidden') {
+                    address.style.visibility = 'visible';
+                }
+
+                if (response.style.visibility = 'hidden') {
+                    response.style.visibility = 'visible';
+                }
+
+
+            }
+
+                    let about = document.getElementById('btnabout');
+                    let section = document.getElementById('moreaboutsection');
+                    btnabout.addEventListener('click', function sachin()
+                    {
+
+
+                        if (moreaboutsection.style.display!= 'none')
+                        {
+                            moreaboutsection.style.display = 'none';
+                        }
+                        else
+                        {
+                            moreaboutsection.style.display = 'block';
+                        }
+                        
+                    });
+
+
+            let burger = document.getElementById('burger');
+                    let navbar = document.getElementById('navigation');
+                    let logo = document.getElementsByClassName('logo');
+                    let navlist = document.getElementsByClassName('nav-list');
+                    let
+            searchbar = document.getElementsByClassName('search-bar');
+
+
+
+        </script>
+    </body>
+</html>

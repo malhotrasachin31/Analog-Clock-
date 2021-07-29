@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dom navigation in javascript</title>
+        
+    </head>
+    <body>
+       <div class="container" id="main">
+           <ul id="nav">
+               <li>Home</li>
+               <li>Services</li>
+               <li>Contact Us</li>
+               <li>Blog</li>
+               <li>More about us</li>
+           </ul>    
+       </div>
+        <script>
+            // document objected model (DOM)
+            
+            let main=document.getElementById('main');
+            console.log(main);
+            
+            let nav=document.getElementById('nav');
+            console.log(nav);
+            
+            let container=document.getElementsByClassName('container');
+            console.log(container);
+            
+            let sel=document.querySelector('.container');
+            console.log("selector returns = "+sel);
+            
+        </script>
+    </body>
+</html>

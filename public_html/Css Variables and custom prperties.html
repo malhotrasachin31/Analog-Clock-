@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /*custom variables in CSS*/
+            :root{
+                --item-color:red;
+                --item-font-family:sans-serif;
+            }
+            .container{
+                border: 2px solid black;
+                display: flex;
+                
+            }
+            .item{
+                margin: 2px 9px;
+                border: 2px solid black;
+                height: 200px;
+                background-color: var(--item-color);  /*implentation of the custom variables*/
+                width: 200px;
+           
+                align-items:center
+                font-family: var(--item-font-family);   /*implentation of the custom variables*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">
+                i am box 
+            </div>
+            <div class="item">
+                i am box 
+            </div>
+            <div class="item">
+                i am box 
+            </div>
+        </div>
+    </body>
+</html>

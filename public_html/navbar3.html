@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="keywords" content="web development">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>navigation bar-3</title>
+        <style>
+            .bar{
+                background-color: chocolate;
+                
+                border-radius: 3px;
+            }
+            .bar ul{
+                overflow: auto;
+            }
+            .bar li{
+                float: left;
+                margin: 13px 30px;
+                list-style: none;
+            }
+            .bar li a{
+                text-decoration: none;
+                color: black;
+                padding: 13px 13px;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+            }
+            .s{
+                float:right;
+                padding: 13px 74px;
+            }
+            .s input{
+                border-radius: 12px ;
+                border: 2px solid black;
+                padding: 3px 17px;
+                width: 229px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact-Us</a></li>
+                    <div class="s">
+                        <input type="text" name="textfield" placeholder="Search for items">
+                    </div>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>

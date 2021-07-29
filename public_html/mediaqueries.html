@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .box{
+                color: white;
+                font-size: 52px;
+                background-color: blue;
+                text-align: center;
+                display: none;
+            }
+            @media(max-width:300px)
+            {
+                #one{
+                    display: block;background-color: hotpink;
+                }
+            }
+            @media(min-width:300px) and (max-width:500px)
+            {
+                #two{
+                    display: block;
+                    background-color: seagreen;
+                }
+            }
+             @media(min-width:500px) and (max-width:800px)
+            {
+                #three{
+                    display: block;
+                    background-color: navy;
+                }
+            }
+             @media(min-width:800px)
+            {
+                #four{
+                    display: block;
+                    background-color: seagreen;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box" id="one">i am iphone</div>
+        <div class="box" id="two">i am tablet</div>
+        <div class="box" id="three">i am desktop</div>
+        <div class="box" id="four">i am i big screen computer</div>
+    </body>
+</html>

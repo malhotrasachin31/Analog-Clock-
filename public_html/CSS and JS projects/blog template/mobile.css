@@ -1,0 +1,63 @@
+@media screen and (max-width:1032px)
+{
+    .navigation{
+        flex-direction:column;
+    }
+    .left{
+         flex-direction:column;
+         text-align: center;
+         font-size: 15px;
+    }
+    .left li a{
+        font-size: 20px;
+    }
+    .content-right{
+        display: none;
+        
+    }
+
+ .form{
+      text-align: center;
+  }
+  .text input{
+          width: 150px;
+    margin: 5px
+  }
+  .text textArea{
+        width: 479px;
+    margin: 5px;
+  }
+  input[type=text]
+  {
+      border:2px solid black;
+  }
+    input[type=email]
+  {
+      border:2px solid black;
+  }
+    input[type=address]
+  {
+      border:2px solid black;
+  }
+    input[type=number]
+  {
+      border:2px solid black;
+  }
+    textArea[type=text]
+  {
+      border:2px solid black;
+  }
+   input[type=submit]
+  {
+      border:2px solid black;
+      background-color: black;
+      color: white;
+      width:200px;
+      cursor: pointer;
+  }
+.dabba{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body{
+                background-color: buttonface;
+            }
+            .container{
+                border: 2px solid black;
+                display: flex;
+                height: 300px;
+                justify-content:center;
+                align-items:center;
+            }
+            .box{
+                margin: 100px;
+            }
+            .container .box button{
+                width: 100px;
+                height: 100px;
+                background-color: white;
+                cursor: pointer;
+                transition: all background-color;
+                transition-duration: 1s;
+                border-radius: 20px;
+                border: none;
+            }
+       
+             .container2 .box2 button{
+                width: 300px;
+                height: 100px;
+                background-color: red;
+                cursor: pointer;
+              border-radius: 20px;
+            }
+          /*  .container2 .box2 button:hover{
+                 animation: sachin;
+               animation-duration: 10s;
+               animation-iteration-count: infinite;
+               animation-direction: forward;
+            }
+            @keyframes sachin{
+                25%{
+                    background-color:green;
+                    width:500px;
+                    font-size:30px;
+                }
+            }*/
+             .container .box button:hover{
+                width: 250px;
+               font-size: 30px;
+                height: 100px;
+                color: white;
+                cursor: pointer;
+                border-radius: 20px;
+            
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <button>Hover me</button>
+                
+            </div>
+            <div class="container2">
+                <div class="box2">
+                    <button>Hover me</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

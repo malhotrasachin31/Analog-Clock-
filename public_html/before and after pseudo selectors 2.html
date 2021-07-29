@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+              background-color: black;
+              color:white;
+              padding: 0px;
+              background-image: url("https://source.unsplash.com/user/erondu/1600x900");
+              background-repeat: no-repeat;
+              background-size: cover;
+              margin: 0px;
+              
+            }
+            header{
+                display: flex;
+                flex-direction:column;
+            }
+            .navigation{
+                display: flex;
+                font-size: 20px;
+            }
+            li{
+                list-style: none;
+                padding: 0px;
+                padding: 30px 20px;
+            }
+            h3{
+                font-size: 4rem;
+            }
+            section{
+                display: flex;
+                margin: 0px 23px;
+                flex-direction:column;
+                align-items:center;
+                height: 300px;
+               
+                justify-content:center;
+            }
+            header::before{
+                content: "";
+                background-image: url("https://source.unsplash.com/user/erondu/1600x900");
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                top: 0px;
+                left: 0px;
+                
+            }
+            .navbar ul{
+                padding: 0px 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul class='navigation'>
+                    <li class="item">Home</li>
+                    <li class="item">About</li>
+                    <li class="item">Services</li>
+                    <li class="item">Contact-Us</li>
+                    <li class="item">Portfolio</li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h3>Welcome to the Sachin's World</h3>
+            <p>Try to thinthematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.</p>
+        </section>
+    
+    </body>
+</html>

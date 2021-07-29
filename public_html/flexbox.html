@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            .container{
+                display: flex;
+                background-color: orange;
+                /*height: 500px;*/
+                
+                /*flex direction properties for container*/
+                flex-direction:row;
+                /*flex-direction:column;
+                flex-direction:row-reverse;
+                flex-direction:column-reverse;*/
+               /* flex-wrap:wrap;
+               flex-wrap:wrap-reverse;
+                flex-flow:row-reverse wrap;*/
+              
+               /*flex container prperties*/
+               
+               /*justify-content:center;
+                justify-content:space-between;
+                justify-content:space-evenly;
+                justify-content:space-around;
+                align-items:center;
+                 align-items:flex-start;
+                  align-items:flex-end;
+                align-item:stretch;*/
+               
+                       }
+                       
+                       #box1{
+                           order:2;/*highre the order later it shows in the container*/
+                           flex-grow:2;
+                       }
+                       #box2{
+                           order:4;
+                           flex-grow:5;
+                           flex-shrink:3;
+                               
+                           align-self:flex-end;
+                         
+                       }
+            .box{
+                border: 2px solid black;
+                margin: 20px;
+                text-align: center;
+                width: 100px;
+                height: 100px;
+                background-color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <div class="box" id="box1">i am box 1</div>
+        <div class="box" id="box2">i am box 2</div>
+        <div class="box" id="box3">i am box 3</div>
+        <div class="box" id="box4">i am box 4</div>
+        <div class="box" id="box5">i am box 5</div>
+        </div>
+    </body>
+</html>

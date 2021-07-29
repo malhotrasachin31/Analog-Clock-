@@ -1,0 +1,104 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 Nov, 2020, 1:52:12 AM
+    Author     : dell
+*/
+/*navbar CSS*/
+*{
+    font-size:15px;
+}
+.navbar{
+    display: flex;
+    flex-Direction:column;
+    flex-wrap:wrap;
+    padding: 0px;
+    
+}
+
+ .navbar ul li{
+     display: flex;
+     padding: 0px;
+     margin: 0px;
+     overflow: hidden;
+ }
+
+.navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 0px;
+    margin;0px;
+}
+.h-primary{
+    font-size: 26px;
+}
+
+/*Home CSS Container*/
+#home{
+    height: 270px;
+    padding: 3px 68px;
+}
+#home::before{
+    height: 450px;
+}
+#home p{
+    font-size: 13px;
+}
+
+/*Service Container CSS*/
+#services{
+    display: flex;
+    flex-direction:column;
+}
+.services-container{
+    margin: 50px;
+}
+/*section3 CSS*/
+
+
+/*Partners CSS*/
+
+/*Contacts*/
+.dabba{
+    overflow: hidden;
+}
+.dabba2{
+      display: flex;
+      align-items:center;
+      justify-content:center;
+     
+  }
+ .dabba2 input{
+      margin: 0px;
+      width: 300px;
+      height: 20px;
+      margin: 5px;
+  }
+  .dabba2 textArea{
+      margin: 5px;
+      width: 300px;
+      height: 100px;
+  }
+/*Footer CSS*/
+button{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+
+
+#section3 .cont h1{
+    font-size: 50px;
+}
+
+ #partners{
+    
+     text-align: center;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 67px;
+     
+     
+     
+  }
+  

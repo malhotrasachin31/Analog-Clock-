@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>String functions in javascript</div>
+        <script>
+            var string="this is a language";   // for declaration of string
+            
+            console.log(string);     // for displaying string on the screen
+            
+              // string various functions such as 
+              
+              /*
+               string.length();
+               string.replace();
+               string.slice();
+               string.substring();
+               string.concat();
+               string.toUpperCase();
+               string.toLowerCase();
+               string.trim();
+               string.indexOf();
+               string.lastIndexOf();    
+               string.charAt();
+               string.TocharArray();
+               
+               */
+              
+            // string.indexOf(n) = getting the value placed on the given index(n) of the string"
+              
+            
+            console.log("the value of is is placed on "+string.indexOf("i"));
+            
+               // string.lastindexOf(n) = getting the value placed on the given index(n) of the string generally  at the last place"
+           console.log("the value of last e is placed on "+string.lastIndexOf("e"));
+            
+               // string.slice(n1,n2) is a function which is used for getting substring from n1 to n2 (one index to another) a given string.
+            
+            console.log("slice substring of "+string+ " is "+string.slice(1,7));
+            
+               // string.substring(n1,n2) is a function which is also used for getting substring from n1 to n2 (one index to another) a given string.
+            
+            console.log(string.substring(2,6));
+            
+            // string.replace('string1','string2'); is a function in which substring of a given string is been replaced by another given string defined by user
+            
+            var replace=string.replace('a language','javascript tutorials');
+            console.log(replace);
+            
+            //string.concat('string1','string2');  is a function in which string1 is concatinated width another string2
+            
+            var concat=string.concat(replace);
+            console.log(concat);
+            
+            //string.toUpperCase(string); is a function in string in which whole string is converted to upper case
+            
+            var upper=string.toUpperCase(string);
+            console.log(upper);
+            
+            //string.toLowerCase(string); is a function in string in which whole string is converted to lower case
+
+            var lower=string.toLowerCase(string);
+            console.log(lower);
+            
+            // string.charAt() is the function used for getting the index value of the given character
+            
+            var ch=string.charAt(12);
+            console.log(ch);
+            
+            // string.trim is used for deleting extra whitespaces in a given string
+            
+            var tri=string.trim(string);
+            console.log(tri);
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.max-width1{
+    max-width: 85vw;
+}
+.max-width2{
+    max-width: 60vw;
+}
+.m-auto{
+    margin:20px auto;
+}
+.footer .p{
+        display: flex;
+            margin: 0px 19px;
+}
+.left ul{
+    font-size: 9px;
+}
+.home-articles{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+.home-articles img{
+    width: 265px;
+    height: 160px;
+    border-radius: 18px;
+}

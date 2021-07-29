@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                color: white;
+            }
+            .first{
+                width: 140px;
+                height: 140px;
+                border: 2px solid black;
+                
+            }
+            #box1{
+               background-color: red; 
+               /*visibility: hidden;*/
+             position: relative;
+             top: 20px;
+             z-index: 34;
+            }
+            #box2{
+                background-color: green;
+                position: relative;
+                top: 0px;
+                z-index: 39;
+            }
+            #box3{
+                background-color: blueviolet; 
+                /*visibility: hidden;*/
+            }
+            #box4{
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="first" id="box1">i am box 1</div>
+        <div class="first" id="box2">i am box 2</div>
+        <div class="first" id="box3">i am box 3</div>
+        <div class="first" id="box4">i am box 4</div>
+    </body>
+</html>

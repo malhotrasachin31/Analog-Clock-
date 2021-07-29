@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container"'>
+            <div class="item">
+                This Is A function in JS
+            </div>
+        </div>
+        <script>
+           /* console.log("sachin is a good boy");
+            console.log("naman is a good boy");
+            console.log("sandeep is a good boy");
+            console.log("pardeep is a good boy");
+            console.log("vivek is a good boy");*/
+        
+            /*first method to use functions in javascript*/
+    
+            let name="sachin malhotra";    // declaration of a variable in JS
+            function sachin(name)         // function in JS
+            {
+                 console.log(name+" is a good boy");
+            }
+            sachin(name);
+            
+            /*second method of defining and declaring functions in JS*/
+            
+         
+            function naman(name1)
+            {
+                console.log(name1+" is a good boy");
+            }
+            naman("naman");
+            
+            /*third types of  declaring a function in JS*/
+            
+            let a=23;
+            let b=56;
+            let c;
+            function add()
+            {
+                c=a+b;
+                console.log(c);
+            }
+             function sub()
+            {
+                c=a-b;
+                console.log(c);
+            }
+            add();
+            sub();
+            
+            /*javascript functions*/
+            function first(a,b,c,d)
+            {
+                var x=a+b+c+d;
+                console.log(x);
+            }
+            first(1,2,3,4);
+            
+            /*calculating percentage of student type 1*/
+            
+            function standard(english,hindi,maths,science,sst,computer)
+            {
+                total=english+hindi+maths+science+sst+computer;
+                console.log("the total marks obtained by student is "+total);
+                per=total/600*100;
+                console.log("the total percent obained by student is "+per);
+            }
+            standard(89,89,89,89,89,89);
+            
+            /*calculating percentage of student type 2*/
+            
+            var english1=90;
+            var hindi1=90;
+            var maths1=90;
+            var science1=90;
+            var sst1=90;
+            var computer1=90;
+            function total1()
+            {
+                total=english1+hindi1+maths1+science1+sst1+computer1;
+                console.log("total score is "+total);
+            }
+            total1();
+            function per1()
+            {
+                per1=total/600*100;
+                console.log("the per is "+per1);
+            }
+            per1();
+            
+            
+            
+        </script>
+    </body>
+</html>

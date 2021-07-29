@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                margin: 20px auto;
+                padding: 0px;
+            }
+
+            h1{
+                text-align: center;
+            }
+            #container{
+                height: 500px;
+                width: 1300px;
+                border:2px solid black;
+                border-radius:30px; 
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                transition: 4s;
+            }
+            .items{
+
+                display: inline-block;
+
+            }
+            .items button{
+                background-color: black;
+                color: white;
+                padding: 10px;
+                border-radius:5px;
+                width: 200px;
+                cursor: pointer;
+                text-align: center;
+            }
+            #btn1:hover{
+                background-color: blue;
+                
+            }
+            #btn2:hover{
+                background-color: orange;
+            }
+            #btn3:hover{
+                background-color: grey;
+            }
+            #btn4:hover{
+                background-color: pink;
+            }
+            #btn5:hover{
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="heading">Background Color changer</h1>
+        <div id="container">
+
+            <div class="items">
+                <button id="btn1">Blue</button>
+            </div>
+            <div class="items">
+                <button id="btn2">Orange</button>
+            </div>
+            <div class="items">
+                <button id="btn3">Grey</button>
+            </div>
+            <div class="items">
+                <button id="btn4">Pink</button>
+            </div>
+            <div class="items">
+                <button id="btn5">Red</button>
+            </div>
+        </div>
+        <script>
+            var button1 = document.getElementById('btn1');
+            var button2 = document.getElementById('btn2');
+            var button3 = document.getElementById('btn3');
+            var button4 = document.getElementById('btn4');
+            var button5 = document.getElementById('btn5');
+            var container=document.getElementById('container');
+            
+            button1.addEventListener('click',function color()
+            {
+                container.style.backgroundColor='blue';
+                 console.log(container.style.backgroundColor);
+              
+            });
+            button2.addEventListener('click',function color()
+            {
+                container.style.backgroundColor='orange';
+                console.log(container.style.backgroundColor);
+            });
+            button3.addEventListener('click',function color()
+            {
+                container.style.backgroundColor='grey';
+                 console.log(container.style.backgroundColor);
+            });
+            button4.addEventListener('click',function color()
+            {
+                container.style.backgroundColor='pink';
+                 console.log(container.style.backgroundColor);
+            });
+            button5.addEventListener('click',function color()
+            {
+                container.style.backgroundColor='red';
+                 console.log(container.style.backgroundColor);
+            });
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="items">
+                <h1>This is my heading</h1>
+                <p id="para">FoodeiBlog is a modern, responsive and very eye-catchy free food and recipe blog template. If you are a home cook or a professional chef, whoever is interested in starting their online project, make it happen with FoodeiBlog. This stunning and easy to use solution can help you spread the word out for your food passion, as well as delicious recipes. The tool comes with all sorts of practical features that will get you started on the internet much quicker.
+
+Moreover, FoodeiBlog comes with slideshow action, social media icons, drop-down menu, Google Maps and a functional contact form. Of course, this is just a small segment of all the treats you can get your hands on. Also, while you can freely customize the appearance of FoodeiBlog, you can utilize it exactly as it comes out of the box, too. Start sharing anything food and recipes-related with FoodeiBlog.</p>
+                <button id="btn">Click me</button>
+            </div>
+        </div>
+        <script>
+                var para=document.getElementById('para');
+                var btn=document.getElementById('btn');
+                
+                btn.addEventListener('click',function sachin(){
+                    if(para.style.display!='none')
+                    {
+                        para.style.display='none';
+                    }
+                    else
+                    {
+                        para.style.display='block';
+                    }
+                });
+                
+                /*function hide()
+                {
+                     var btn=document.getElementById('btn');
+                     var para=document.getElementById('para');
+                     if(para.style.display!='none')
+                     {
+                         para.style.display='none';
+                     }
+                     else
+                     {
+                         para.style.display='block';
+                     }
+                }*/
+         </script>
+    </body>
+</html>

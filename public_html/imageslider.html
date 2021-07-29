@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            body{
+                background-color: black;
+            }
+            #image{
+               width: 6800px;
+                animation: sachin;
+                 animation-duration: 10s;
+                 animation-iteration-count: infinite;
+                position: relative;
+                animation-duration: 20s;
+                overflow: hidden;
+            }
+            .slider{
+               
+               
+                display: flex;
+            }
+            .slider img{
+                width: 1400px;
+                height: 600px;
+               
+               
+            }
+            @keyframes sachin
+            {
+                0%{
+                    left:0px;
+                }
+                20%{
+                    left:0px;
+                }
+                25%{
+                    left:-1400px;
+                }
+                45%{
+                    left:-1400px;
+                }
+                50%{
+                    left:-2800px;
+                }
+                70%{
+                    left:-2800px;
+                }
+                75%{
+                    left:-4200px;
+                }
+                95%{
+                    left:-4200px;
+                }
+                100%{
+                    left:-4200px;
+                }
+            }
+            #image h1{
+                z-index: -1;
+            }
+        </style>
+        <title>Image Slider</title>
+    </head>
+    <body>
+        <section id="image">
+           
+            <div class="slider">
+                <img src="food.jpg">
+                <img src="food2.jpg">
+                <img src="center.jpg">
+                <img src="wood.jpg">
+               
+            </div>
+        </section>
+    </body>
+</html>

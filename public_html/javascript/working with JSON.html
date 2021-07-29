@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <script>
+            let student={
+                name:"sachin",
+                age:"21",
+                veg:"bhindi",
+                blog:"malhotraEngineers"
+            }/* it is an object named student */
+            console.log(student);
+            
+            /* in the json you can change the object to string and string to object */
+            let jsonstr=JSON.stringify(student);
+            console.log(jsonstr);
+            
+            /*manipulate the data*/
+            
+            let string1=jsonstr.replace("sachin","naman");
+            console.log(string1);
+            
+            /*after manipulating the data convert it into the object again */
+            
+            let jsonobj=JSON.parse(string1);
+            console.log(jsonobj);
+            
+        </script>
+    </body>
+</html>

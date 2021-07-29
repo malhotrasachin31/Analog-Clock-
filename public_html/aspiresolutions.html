@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            html{
+                scroll-behavior:smooth;
+            }
+            #header{
+
+                display: flex;
+
+            }
+            body{
+                font-family: 'Raleway', sans-serif;
+
+            }
+            .navbar{
+                position: sticky;
+                display: flex;
+                width:960px;
+                justify-content:center;
+                align-items:center;
+            }
+            .navbar ul{
+                list-style: none;
+                display: flex;
+                font-size: 20px;
+            }
+            .navbar ul li a{
+                text-decoration: none;
+                color: black;
+                margin: 20px;
+                font-family: 'Raleway', sans-serif;
+            }
+            .navbar li a:hover ,.navbar li a.active{
+                text-decoration: underline;
+                color: black;
+                margin: 20px;
+                font-family: 'Raleway', sans-serif;
+            }
+            #search{
+                width: 300px;
+                
+            }
+            #search input{
+                position: absolute;
+                top: 35px;
+                right: 40px;
+                width: 300px;
+                height: 25px;
+                padding: 5px;
+                text-align: center;
+            }
+            input[type=text]
+            {
+                border: 1px solid black;
+
+
+            }
+            #home{
+
+                height: 550px;
+                background-image: url(center.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                opacity: 1.9;
+                display: flex;
+                justify-content:center;
+                align-items:center;
+                padding: 10px;
+                color: white;
+                font-family:  'Raleway', sans-serif;
+            }
+
+            #home p{
+                text-align: center;
+                font-size: 30px;
+
+            }
+            #services{
+
+                height: 250px;
+                display: flex;
+                justify-content:center;
+                align-items:center;
+            }
+            #services h3{
+                font-family:  'Raleway', sans-serif;
+                padding: 30px;
+                font-size: 40px;
+                line-height: 20px;
+                color: brown;
+            }
+            #services .container{
+                border: 1px solid black;
+                width: 400px;
+                height: 200px;
+                margin: 5px;
+                border-radius: 20px;
+                text-align: center;
+                align-items:center;
+                padding: 10px;
+
+            }
+            h1{
+                text-align: center;
+                font-size: 60px;
+            }
+            #about-us{
+
+                height: 360px;
+
+                border-radius: 20px;
+                margin: 10px;
+                color: black;
+                display: flex;
+
+
+            }
+            #about-us ul li{
+                list-style: inside;
+                text-align: left;
+                margin: 10px;
+                color:black;
+                font-size: 21px;
+
+            }
+            #about-us p{
+                text-align:left;
+                margin: 10px;
+                font-size: 27px;
+                margin: 20px;
+                color: black;
+                width: 650px;
+
+
+            }
+            .partners{
+
+                height: 300px;
+            }
+            .partners{
+                display: flex;
+                padding: 10px;
+                margin: 0px;
+                justify-content:center;
+                align-items:center;
+            }
+            .dabba img{
+                height: 170px;
+                widows: 170px;
+                margin: 5px;
+                border: 2px solid black;
+                border-radius: 15px;
+
+            }
+            h4 a{
+                text-align: center;
+                display: block;
+                text-decoration: none;
+                color: blue;
+            }
+            #product{
+
+                height: 250px;
+                display: flex;
+                justify-content:center;
+                align-items:center;
+                border-radius: 20px;
+                background-image: url(mac.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                opacity: 0.9;
+            }
+            .item{
+
+                margin: 2px;
+                border-radius: 20px;
+            }
+            #name{
+                text-align: center;
+            }
+            #contacts{
+                opacity: 0.9;
+                height: 530px;
+                display: flex;
+                justify-content:center;
+                align-items:center;
+                background-image: url(center.jpg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                text-align: center;
+            }
+            input[type=text]
+            {
+                border:2px solid black;
+            }
+            input[type=email]
+            {
+                border:2px solid black;
+            }
+            input[type=address]
+            {
+                border:2px solid black;
+            }
+            input[type=number]
+            {
+                border:2px solid black;
+            }
+            textArea[type=text]
+            {
+                border:2px solid black;
+            }
+            input[type=submit]
+            {
+                border:2px solid black;
+                background-color: black;
+                color: white;
+                cursor: pointer;
+            }
+            .dabba2 input{
+                margin: 5px;
+                width: 700px;
+                height: 25px;
+            }
+            .dabba2 textArea{
+                margin: 5px;
+                width: 700px;
+                height: 150px;
+            }
+            footer{
+               
+                height: 240px;
+                background-color: gray;
+                display: flex;
+                color: white;
+                background-color: black;
+                text-align: center;
+                justify-content:center;
+
+            }
+            footer .bachhe{
+                border: 2px solid black;
+                font-size: 20px;
+                margin: 30px;
+                height: 190px;
+            }
+            .list{
+                width: 280px;
+              
+            }
+            .list ul {
+                list-style: none;
+
+            }
+            .list ul li{
+                margin: 10px;
+                font-size: 15px;
+            }
+            .list ul li a{
+                text-decoration: none;
+                color: white;
+
+            }
+            #foot{
+                text-align: center;
+                background-color: black;
+                color: white;
+            }
+            .list ul li a:hover{
+                text-decoration: underline;
+                color: white;
+            }
+            #button{
+             
+              display: flex;
+              
+            }
+            #button .btn{
+                margin: 20px;
+                display: flex;
+                
+            }
+            #button .btn a{
+                display: block;
+                margin: auto;
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <div class="logo">
+                <img src="logo1.png">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#au">About-Us</a></li>
+                    <li><a href="#serv">Services</a></li>
+                    <li><a href="#clients">Our Clients</a></li>
+                    <li><a href="#client">Our Products</a></li>
+                    <li><a href="#contacts2">Contact-Us</a></li>
+                </ul>
+            </nav>
+            <div id="button">
+                <div class="btn">
+                <a href="login">Login</a>
+                </div>
+                <div class="btn">
+                <a href="login">Sign-Up</a>
+                </div>
+            </div>
+        </header>
+        <section id="home">
+
+            <p>
+                Aspire Solution has been promoted by professionals, who are having more than 25 years of rich experience in industrial products. It was incorporated in 2013 with the dealership of Flowserve India Controls Pvt. Ltd. manufacturer of AUDCO valves and today they are the largest stockist of AUDCO valves in North India.</p>
+        </section>
+        <h1 id="serv">Our Services</h1>
+        <section id="services">
+            <div class="container">
+                <h3>Rapid Dispatch</h3>
+                <p>We believe that the key is to keep our customers satisfied by providing them with a quality service and the best possible solutions. According to us, supplying the products is not enough, it is the healthy relationship with our customers that matters.</p>
+            </div>
+            <div class="container">
+                <h3>Fast Service</h3>
+                <p>We believe that the key is to keep our customers satisfied by providing them with a quality service and the best possible solutions. According to us, supplying the products is not enough, it is the healthy relationship with our customers that matters.</p>
+            </div>
+            <div class="container">
+                <h3>Quality Products</h3>
+                <p>We believe that the key is to keep our customers satisfied by providing them with a quality service and the best possible solutions. According to us, supplying the products is not enough, it is the healthy relationship with our customers that matters.</p>
+            </div>
+
+        </section>
+        <h1 id="au">About Us</h1>
+        <section id="about-us">
+            <div class="item">
+                <p>Aspire Solution has been promoted by professionals, who are having more than 25 years of rich experience in industrial products. It was incorporated in 2013 with the dealership of Flowserve India Controls Pvt. Ltd. manufacturer of AUDCO valves and today they are the largest stockist of AUDCO valves in North India. They have also been appointed by Alfa Laval for Sugar & Distilleries in UP & Bihar, .</p>
+            </div>
+            <div class="item">
+                <ul>
+                    <li>Authorised Channel Partner and Service Franchisee for Flowserve India Controls Private Ltd. manufacturer of Audco Valves.</li>
+                    <li>Well versed with the requirement of consultants/end users such as EIL, MECON, NTPC, PDIL, IOCL, Bechtel, Technip, MN Dastur, UDHE etc.</li>
+                    <li>We do Automation of Valves providing Pneumatic/ Electrical Actuator and Accessories as per the requirement of Customers and also undertake repair and maintenance job.</li>
+                    <li>Provision of full support to our customers in getting drawing, data sheet & Quality Plan approved from Consultants.</li>
+                </ul>
+            </div>
+        </section>
+        <h1 id="clients">Our Clients</h1>
+        <h4><a href=" ">More Clients</a></h4>
+        <section class="partners">
+            <div class="dabba">
+                <img src="pic1.jpg">
+            </div>
+            <div class="dabba">
+                <img src="pic2.png">
+            </div>
+            <div class="dabba">
+                <img src="pic3.bmp">
+            </div>
+            <div class="dabba">
+                <img src="pic4.jpg">
+            </div>
+            <div class="dabba">
+                <img src="pic5.gif">
+            </div>
+
+        </section>
+        <h1 id="client">Our Products</h1>
+        <h4><a href=" ">More products</a></h4>
+        <section id="product">
+            <div class="dabba">
+                <img src="v1.png">
+                <h3 id="name">Audco Valve</h3>
+            </div>
+            <div class="dabba">
+                <img src="v2.jpg">
+                <h3 id="name">Flow serve Control Valve</h3>
+            </div>
+            <div class="dabba">
+                <img src="v3.jpg">
+                <h3 id="name">Automax Actuator</h3>
+            </div>
+            <div class="dabba">
+                <img src="v4.png">
+                <h3 id="name">Gasketed plate Heat exchangers</h3>
+            </div>
+            <div class="dabba">
+                <img src="v6.jpg">
+                <h3 id="name">Alpha Laval Decanters</h3>
+            </div>
+
+        </section>
+        <h1 id="contacts2">Contact Us</h1>
+        <section id="contacts">
+
+            <div class="dabba2">
+                <form class="form">
+                    <div class="text">
+                        <input type="text" name="username" placeholder="Enter your Name">
+                    </div>
+                    <div class="text">
+                        <input type="address" name="username" placeholder="Your Address">
+                    </div>
+                    <div class="text">
+                        <input type="number" name="username" placeholder="Phone Number">
+                    </div>
+                    <div class="text">
+                        <input type="email" name="username" placeholder="Email-ID">
+                    </div>
+                    <div class="text">
+                        <input type="number" name="username" placeholder="Alternate Phone-Number">
+                    </div>
+
+                    <div class="text">
+                        <textarea type="text" name="textarea" cols="30" rows="10" placeholder="Please enter your query here"></textarea>
+                    </div>
+                    <input type="submit" class="text" value="submit">
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="bachhe">
+                <h3>Our Products</h3>
+                <div class="list">
+                    <ul>
+                        <li><a href="#">Forves Marshall</a></li>
+                        <li><a href="#">Audco Valves</a></li>
+                        <li><a href="#">Alpha Laval</a></li>
+                        <li><a href="#">Flow Serve</a></li>
+                        <li><a href="#">Bello O Seal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bachhe">
+                <h3>Delhi Office</h3>
+                <div class="list">
+                    Aspire Solution, 3950/2, 1st Floor, Near HDFC Bank, Behind GB Road, Delhi-110006
+                    Landline: 011-42271770
+                </div>
+            </div>
+            <div class="bachhe">
+                <h3>Ghaziabad Office</h3>
+                <div class="list">
+                    Aspire Solution, 1/A, Tyagi Market(opposite MMX Mall), GT Road, Mohan Nagar, Ghaziabad, Uttar Pradesh-201007
+                    Landline: 0120-4565738
+                </div>
+            </div>
+            <div class="bachhe">
+                <h3>Our Products</h3>
+                <div class="list">
+                    Phone:
+                    +919958928056
+
+                    E-mail: sanjivkumar@aspiresolution.in
+                </div>
+            </div>
+           
+        </footer>
+         <h3 id="foot">CopyRight &COPY; www.sales@aspiresolutions.in</h3>
+    </body>
+</html>

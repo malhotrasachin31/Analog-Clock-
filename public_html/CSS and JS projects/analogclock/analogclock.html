@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            #container{
+                
+                width: 40vw;
+                height: 40vw;
+                position: relative;
+                //background-color: black;
+                margin:10% auto ;
+                background-image: url(clock2.png);
+                background-repeat: no-repeat;
+                
+                background-size: 100%;
+                //border-radius: 300px;
+            }
+            #hourhand , #minhand, #secondhand{
+                
+                
+                background-color: black;
+                position: absolute;
+               border-radius: 40px;
+            }
+            #hourhand{
+                
+                background-color: red;
+                width: 1%;
+                height: 28%;
+                top: 21%;
+                left: 49.9%;
+                opacity: 0.8;
+                transform-origin: bottom;
+            }
+            #minhand{
+                 background-color:palevioletred;
+                width: 1%;
+                height: 30%;
+                top: 19%;
+                left: 49.9%;
+                opacity: 0.8;
+                 transform-origin: bottom;
+            }
+            #secondhand{
+                 background-color: red;
+                width: 1%;
+                height: 37%;
+                top: 12%;
+                left: 49.9%;
+                  transform-origin: bottom;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="hourhand"></div>
+            <div id="minhand"></div>
+            <div id="secondhand"></div>
+        </div>
+        <script>
+            function time()
+            {
+                let d=new Date();
+                
+                htime=d.getHours();
+                mtime=d.getMinutes();
+                stime=d.getSeconds();
+                
+                hhand=30*htime+mtime/2;
+                mhand=6*mtime;
+                shand=6*stime;
+                
+                hourhand.style.transform=`rotate(${hhand}deg)`;
+                minhand.style.transform=`rotate(${mhand}deg)`;
+                secondhand.style.transform=`rotate(${shand}deg)`;
+            }
+            setInterval(time,1000);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h1{
+                text-align: center;
+                color: orange;
+                background-color: black;
+            }
+            /*advanced selectors in CSS*/
+            /*div p{
+                color: black;
+                background-color: orange;
+            }*/
+            
+            /*only when paragraph is right inside div*/
+            /*div > p{
+                color:brown;
+            }*/
+              /*only when paragraph if p is right after div*/
+            div + p{
+                color: yellowgreen;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>This is more on selectors</h1>
+        <div class="container">
+            <div  class="row">
+                <ul>
+                    <li><p>this is first paragraph</p></li>
+                </ul>
+                <p>this is a paragraph</p>
+            </div>
+            <p>this is another paragraph</p>
+        </div>
+        <p>this is outer most paragraph</p>
+    </body>
+</html>

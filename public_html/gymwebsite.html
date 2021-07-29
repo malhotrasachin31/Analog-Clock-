@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta name="robot" content="FOLLOW,INDEX">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="fitness">
+        <meta name="discription" content="meta discription">
+        <title>GyM Website</title>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body{
+                background-image: url(training.jpg);
+                background-size:cover;
+                background-size: 100%;
+                color: aliceblue;
+                font-family: 'Baloo Tammudu 2', cursive;
+            }
+            .left{
+                
+                display: inline-block;
+                position: absolute;
+                left: 33px;
+                top: 15px;
+            }
+            .mid{
+                
+                display: block;
+                margin: 15px auto;
+                width: 700px;
+                
+            }
+            .right{
+                
+                position: absolute;
+                right: 33px;
+                top: 15px;
+                display: inline-block;
+            }
+            .navbar{
+                display: inline-block;
+            }
+            .navbar li{
+                display: inline-block;
+            }
+            .navbar li a{
+                color: aliceblue;
+                text-decoration: none;
+                margin: 32px;
+                font-family: 'Baloo Tammudu 2', cursive;
+                padding: 4px;
+                font-size: 25px;
+            }
+            .navbar li a:hover ,.navbar li a.active{
+                text-decoration: underline;
+                color:black;
+            }
+            .left img{
+                width: 130px;
+                left: 0px;
+                height: 100px;
+                filter: invert(100%);
+            }
+            .rf{
+                text-align: center;
+                font-size: 15px;
+                font-family: 'Baloo Tammudu 2', cursive;
+                line-height: 0px;
+            }
+            .btn{
+               margin: 0px 9px;
+               background-color: black;
+               color: aliceblue;
+               padding: 4px 10px;
+               cursor: pointer;
+               border-radius: 8px;
+            }
+            .btn:hover{
+                background-color: grey;
+                color: black;
+            }
+            .container{
+                position: fixed;
+                right: 30px;
+                top: 150px;
+               
+                margin: 2px 2px;
+                padding:20px 20px;
+                width: 33%;
+                height: 400px;
+                border-radius: 9px;
+                
+                
+            }
+            .container h1{
+                text-align: center;
+                font-size: 40px;
+                color: rgb(207, 38, 38);
+                
+            }
+            .form input{
+               display: block;
+               width: 440px;
+               height: 30px;
+               margin: 5px;
+               font-size: 20px;
+               border-radius: 5px;
+            }
+            .input :placeholder-shown{
+                text-align: center;
+            }
+            .input2 button{
+                cursor: pointer;
+                width: 440px;
+                background-color: black;
+                color: aliceblue;
+                height: 30px;
+                margin: 5px;
+                border-radius: 5px;
+            }
+            .input2 button:hover{
+                background-color: greenyellow;
+                color: black;
+            }
+        </style>
+       
+    </head>
+    <body>
+        <header class="header">
+            <div class="left">
+                <img src="logo.png" class="logo" alt="">
+                <div class="rf">Royal fitness</div>
+            </div>
+            <div class="mid">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right">
+               <button class="btn">Call-Us</button>
+               <button class="btn">Email-Us</button>
+            </div>
+        </header>
+        <div class="container">
+           <h1>Join the best Gym in delhi</h1>
+           <form class="form" action="">
+            <div class="input">
+                <input type="text" name="text" placeholder="enter your name">
+            </div>
+            <div class="input">
+             <input type="text" name="text" placeholder="enter your email">
+            </div>
+            <div class="input">
+             <input type="text" name="text" placeholder="enter your address">
+            </div>
+            <div class="input">
+             <input type="text" name="text" placeholder="enter your phonenumber">
+            </div>
+            <div class="input2">
+                <button>Submit</button>
+               </div>
+           </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>size units</title>
+        <style>
+            /*various ways to make responsive design
+            1 setting up the viewport
+            2 use max-width and max-height
+            3 using CSS media queries
+            4 using rem/vh/vw units over pixels
+            */
+            html{
+                font-size: 25px;
+            }
+            .container{
+                font-size:10px;
+                border: 2px solid green;
+                width: 100vw;
+                height:100vh;
+            }
+            h1{
+                text-align: center;
+                
+            }
+            #first{
+              /*  font-size: 3rem;
+                padding: 3rem;*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="first">I am heading first</h1>
+            <h1 id="second">I am heading second</h1>
+            <h1 id="third">I am heading third</h1>
+        </div>
+    </body>
+</html>

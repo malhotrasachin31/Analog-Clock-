@@ -1,0 +1,141 @@
+.navigation
+{            
+    height:100px;
+    //background-color: pink;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.content
+{
+    height: 260px;
+    //background-color: palegreen;
+
+}
+.footer
+{
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    display: flex;
+    justiy-content:center;
+    align-items:center;
+    background-color: black;
+}
+.p{
+    margin: 0px 120px;
+}
+.left{
+    display: flex;
+    font-size: 20px;
+}
+.left ul{
+    display: flex;
+    list-style: none;
+    margin: 0px 90px;
+    font-size: 28px;
+    justify-contetnt:center;
+    align-items:center;
+}
+.left ul li a{ 
+    margin: 0px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.left ul li a:hover{ 
+    margin: 0px 10px;
+    text-decoration: none;
+    color: green;
+}
+.form-input{
+    padding:2px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+.btn{
+    padding: 2px;
+    background-color: black;
+    color: white;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.content{
+    display: flex;
+    /*background-image: url(bb.jpg);
+    background-position: center;
+    background-size: 100%;
+    opacity: 0.9;*/
+    position: relative;
+    font-size: 13px;
+    height: 100%;
+    position: relative;
+}
+.content::after{
+    content: " ";
+    background-image: url(bb.jpg);
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
+    opacity: 0.4;
+
+    position: absolute;
+    height: inherit;
+}
+.content-right{
+    width: 50%; 
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding: 10px;
+}
+.content-left{
+
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23 px;
+    padding: 50px;
+}
+.content-right img{
+    width: 250px;
+    border: 2px solid black;
+    height: 250px;
+    border-radius: 300px;
+}
+.article-group{
+    padding: 10px 10px;
+    background-color:papayawhip;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+
+}
+.home-articles{
+
+    display: flex;
+    margin: 20px;
+}
+.home-articles img{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
+.home-article-content{
+    align-self:center;
+    padding: 0px 30px;
+    font-size: 14px;
+}
+.home-article-content p a{
+    text-decoration: none;
+    color: black;
+}
+.home-article-content p a:hover{
+    text-decoration: none;
+    text-decoration: underline;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        The Time is <span id="time"></span>
+        <script>
+            /*setTimeOut--> Allows us to run the function once after the interval of time*/
+            /*clearInterval--> Allows us to run the function repeatedly after the interval of time*/
+            
+            function greet(name)
+            {
+                console.log("hello good morning " +name);
+                
+    }
+           timeout= setTimeout(greet,5000,"sachin");
+           console.log(timeout);
+           
+           //timeout=setInterval(greet,1000,"sachin");
+           
+           
+           function displaytime()
+           {
+               time=new Date();
+              
+               document.getElementById('time').innerHTML=time;
+           }
+           setInterval(displaytime,1000);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="keywords" content="web development tutorials">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>CSS Properties</title>
+        <style>
+            .container{
+                background-color: aqua;
+                height: 3444px;;
+            }
+            .name{
+                border: 2px solid black;
+                margin: 1px;
+                width: 100px;
+                display: inline-block;
+                height: 100px;
+            }
+            /*CSS Positioning are of four types */
+            /*relative*/
+            /*fixed*/
+            /*sticky*/
+            /*absolute*/
+
+            #id1{
+                position: relative;
+                background-color: black;
+                color: aliceblue;
+                left: 50px;
+            }
+            #id2{
+                position: absolute;
+                background-color: white;
+                left: 600px;
+            }
+            #id3{
+                position: fixed;
+                background-color: grey;
+                top: 312px;
+            }
+            #id4{
+                position: sticky;
+                background-color: green;
+                left: 300px;
+                top: 1px;
+            }     
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p class="name" id="id1">1 relative</p>
+            <p class="name" id="id2">2 absolute</p>
+            <p class="name" id="id3">3 fixed</p>
+            <p class="name" id="id4">4 sticky</p>
+        </div>
+    </body>
+</html>
